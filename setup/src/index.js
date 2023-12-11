@@ -2,7 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 const Greeting = () => {
-  return <h2>My first Component</h2>
+  return (
+    <div>
+      <Person />
+      <Message />
+    </div>
+  )
+}
+
+const Person = () => {
+  return <h2>John Doe</h2>
+}
+
+const Message = () => {
+  return <p>this is my message</p>
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
